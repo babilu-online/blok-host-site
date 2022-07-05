@@ -1,0 +1,164 @@
+
+:root {
+	--bs-dark-rgb: transparent;
+	--bs-bg-opacity: 0;
+}
+
+html, body, p {
+	font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, .heading {
+	color: white;
+	font-family: 'Chakra Petch', sans-serif;
+	text-shadow: 0 0 7px black;
+}
+
+.navbar-dark, .bg-dark {
+	background-color: rgb(153, 153, 153) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: black;
+	font-weight: 600;
+}
+
+.nav-link .disabled {
+	color: gray !important;
+	user-select: none;
+}
+
+
+h1 {
+	font-size: 4em;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 400;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+h4 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+.gradient-primary {
+	background: rgb(251, 176, 59);
+	background: linear-gradient(90deg, rgba(251, 176, 59, 1) 0%, rgba(212, 20, 90, 1) 100%);
+}
+
+.gradient-secondary {
+	color: black;
+	background: rgb(153, 153, 153);
+	background: linear-gradient(180deg, rgba(153, 153, 153, 1) 0%, rgba(77, 77, 77, 1) 100%);
+}
+
+body, .gradient-default {
+	color: white;
+	font-weight: 300;
+	background: black;
+}
+
+#header, #header h1, #header h3 {
+	color: black;
+	text-shadow: none;
+}
+
+#header h3 {
+	font-weight: 300;
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
+.social-icon {
+	color: white;
+	fill: white;
+	max-height: 30px;
+	filter: brightness(100%) contrast(1%);
+	cursor: pointer;
+}
+
+/*
+ * Blok host
+*/
+
+section {
+	min-height: 900px;
+	padding-top: 100px;
+	padding-bottom: 200px;
+}
+
+footer a {
+	color: white;
+}
+
+
+.btn.btn-primary.btn-lg {
+	font-size: 1.8em;
+	padding: 5%;
+	border: none;
+	background: rgb(251,176,59);
+	background: linear-gradient(90deg, rgba(251,176,59,1) 0%, rgba(212,20,90,1) 100%);
+}
+
+.btn-hex {
+	color: white;
+	transition: all 30ms ease-in-out;
+	/*background: none;*/
+	border: none;
+	position: relative;
+	background: url("../images/button_shadow.svg") no-repeat;
+	transform: scale(1.01);
+	background-position: center;
+	background-size: contain;
+	height: 200px;
+}
+
+.btn-hex p {
+	font-weight: 300 !important;
+}
+
+.btn-hex:active {
+	transform: scale(1);
+}
+
+
+hr {
+	opacity: 1;
+	height: 3px !important;
+	box-shadow: 0 0 3px black;
+}
+
+/*
+ * Animations
+*/
+body {
+	transition: all 0.3s ease-in-out;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
