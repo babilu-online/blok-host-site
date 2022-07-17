@@ -78,6 +78,11 @@
 						<a class="nav-link text-uppercase disabled noselect" href="#roadmap" title="Roadmap">Roadmap</a>
 					</li>
 				</ul>
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="btn btn-outline-light" href="https://admin.blok.host">NEW SITE</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -120,6 +125,12 @@
 						<p class="mt-4">Your site is now available on the blok network!</p>
 					</div>
 				
+				</div>
+				
+				<div class="row">
+					<div class="col text-center mt-5">
+						<a href="https://admin.blok.host" target="_blank" class="btn btn-outline-light btn-lg px-4 py-3">HOST SITE</a>
+					</div>
 				</div>
 			</div>
 		
@@ -198,7 +209,7 @@
 							Operators.</h4>
 						
 						
-						<button class="btn-hex btn-lg my-5">
+						<button class="btn-hex btn-lg my-5 action-button">
 							<h5>DRAG OR ZIP FILES</h5>
 							<h5>TO UPLOAD</h5>
 						</button>
@@ -209,7 +220,7 @@
 						<h3>Step 2.</h3>
 						<h4>Register your site for hosting.</h4>
 						
-						<button class="btn-hex btn-lg mt-5 mb-2">
+						<button class="btn-hex btn-lg mt-5 mb-2 action-button">
 							<h5>Permalink</h5>
 							<h6>https://difficult-cat.blok.host</h6>
 						</button>
@@ -225,7 +236,7 @@
 						</div>
 						
 						
-						<button class="btn-hex btn-lg mb-5 mt-2">
+						<button class="btn-hex btn-lg mb-5 mt-2 action-button">
 							<h5>CUSTOM DOMAIN</h5>
 							<h6>https://{YOUR_SUBDOMAIN}.blok.host</h6>
 						</button>
@@ -305,4 +316,12 @@
 	</footer>
 </div>
 </body>
+<script>
+	const actions = document.getElementsByClassName("action-button");
+	for(let i = 0; i < actions.length; i++) {
+		actions[i].addEventListener("click", function() {
+			window.location = "https://admin.blok.host"
+		})
+	}
+</script>
 </html>
